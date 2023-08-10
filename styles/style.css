@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: white;
+    font-size: 30pt;
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    color: white;
+    font-size: 20pt;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(../assets/background2hd.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.corpo__cadastro{
+    background-color: black;
+    background-size: 100%;
+    margin-right: 400px;
+    margin-left: 400px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.conteudo__corpo__cadastro{
+    padding-top: 50px;
+}
+
+.infos__cadastro{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.infos__cadastro2{
+    padding-left: 50px;
+    padding-right: 25px;
+}
+
+.janela__formulario{
+    color: white;
+    font-size: 15pt;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    border: 2px solid rgb(54, 54, 54);
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.radio__formulario{
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 15pt;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 50px;
+}
+
+input[type="radio"] {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 0.5rem;
+    background-color: black;
+    appearance: none;
+    border: 0.2rem solid #353535;;
+    border-radius: 50%;
+}
+
+#selecao {
+    outline: 1px solid #353535;
+}
+
+#selecao:hover {
+    outline-color: #353535;
+}
+
+#selecao:checked {
+    outline-color: #353535;
+    background-color: #353535;
+}
+
+.checkbox__formulario{
+    color: rgb(255, 255, 255);
+    font-size: 15pt;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 50px;
+}
+
+.checkbox__colunas{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.checkbox__formulario__coluna{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.checkbox__custom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #000000;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #000000;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    place-content: center;
+    display: grid;
+  }
+
+  
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #353535;
+  }
+  
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+    background-color: CanvasText;
+}
+
+c{
+    color: rgb(131, 131, 131);
+    font-size: 15pt;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 100px;
+}
+
+.condicoes{
+    padding-left: 150px;
+    padding-right: 150px;
+    color: rgb(131, 131, 131);
+    font-size: 10pt;
+    font-family: 'Poppins', sans-serif;
+    gap: 30px;
+}
+
+.condicoes__itens{
+    gap: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.botao{
+    margin: 50px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 50px;
+    border-color: white;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25pt;
+    text-decoration: none;
+}

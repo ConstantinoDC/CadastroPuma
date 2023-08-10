@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <main class="corpo__cadastro">
+        <center>
+            <section class="conteudo__corpo__cadastro">
+                <img src="assets/pumalogo.png" height="100px">
+                <h1>Cadastre-se agora no time PUMA®</h1>
+            </section>
+        </center>
+        <form>
+            <div class="infos__cadastro">
+                <label for="nome"><p>Nome:</p></label>
+                <input type="text" name="nome" id="nome" class="janela__formulario" required>
+
+                <label for="sobrenome"><p>Sobrenome:</p></label>
+                <input type="text" name="sobrenome" id="sobrenome" class="janela__formulario" required>
+
+                <label for="email"><p>E-mail:</p></label>
+                <input type="email" name="email" id="email" class="janela__formulario" required>
+
+                <label for="cep"><p>Cep:</p></label>
+                <input type="number" name="cep" id="cep" class="janela__formulario" required>
+
+                <label for="endereco"><p>Endereço:</p></label>
+                <input type="text" name="endereco" id="endereco" class="janela__formulario" required>
+
+                <label for="telefone"><p>Telefone:</p></label>
+                <input type="tel" name="telefone" id="telefone" class="janela__formulario" required>
+            </div>
+
+            <div class="infos__cadastro2">
+                <label for="uf"><p>Estado</p></label>
+                <select name="uf" id="uf" class="janela__formulario" required>
+
+                    <option>Selecione:</option>
+                    <option>Acre (AC)</option>
+                    <option>Alagoas (AL)</option>
+                    <option>Amapá (AP)</option>
+                    <option>Amazonas (AM)</option>
+                    <option>Bahia (BA)</option> 
+                    <option>Ceará (CE)</option>
+                    <option>Distrito Federal (DF)</option>
+                    <option>Espírito Santo (ES)</option> 
+                    <option>Goiás (GO)</option>
+                    <option>Maranhão (MA)</option>
+                    <option>Mato Grosso (MT)</option>
+                    <option>Mato Grosso do Sul (MS)</option>
+                    <option>Minas Gerais (MG)</option>
+                    <option>Pará (PA)</option>
+                    <option>Paraíba (PB)</option> 
+                    <option>Paraná (PR)</option>
+                    <option>Pernambuco (PE)</option>
+                    <option>Piauí (PI)</option> 
+                    <option>Rio de Janeiro (RJ)</option>
+                    <option>Rio Grande do Norte (RN)</option>
+                    <option>Rio Grande do Sul (RS)</option>
+                    <option>Rondônia (RO)</option>
+                </select>
+            </div>
+
+            <div class="radio__formulario"> 
+                <label for="genero"><p>Qual seu gênero?</p></label>
+                <label>
+                    <input type="radio" name="genero" value="feminino" id="selecao">Feminino
+                </label>
+                
+                <label>
+                    <input type="radio" name="genero" value="masculino" id="selecao">Masculino
+                </label>
+                
+                <label>
+                    <input type="radio" name="genero" value="indeclarado" id="selecao">Prefiro não declarar
+                </label>
+            </div>
+
+            <div class="radio__formulario"> 
+                <label for="genero"><p>Qual sua faixa etária?</p></label>
+                <label>
+                    <input type="radio" name="idade" value="jovem" id="selecao">1-20
+                </label>
+                
+                <label>
+                    <input type="radio" name="idade" value="adulto" id="selecao">21-40
+                </label>
+                
+                <label>
+                    <input type="radio" name="idade" value="idoso" id="selecao">40+
+                </label>
+            </div>
+
+            <div class="checkbox__formulario">
+                <label for="interesses"><p>Quais esportes voce tem interesse?</p></label>
+                <label>
+                    <section class="checkbox__colunas">
+                        <section class="checkbox__formulario__coluna">
+                            <section>
+                                <input type="checkbox" name="esporte" value="futebol">Futebol
+                            </section>
+
+                            <section>
+                                <input type="checkbox" name="esporte" value="futsal">Futsal
+                            </section>
+
+                            <section>
+                                <input type="checkbox" name="esporte" value="basquete">Basquete
+                            </section>
+                        </section>
+
+                        <section class="checkbox__formulario__coluna">
+                            <section>
+                                <input type="checkbox" name="esporte" value="volei">Volei
+                            </section>
+
+                            <section>
+                                <input type="checkbox" name="esporte" value="atletismo">Atletismo
+                            </section>
+
+                            <section>
+                                <input type="checkbox" name="esporte" value="natacao">Natação
+                            </section>
+                        </section>
+
+                        <section class="checkbox__formulario__coluna">
+                            <section>
+                                <input type="checkbox" name="esporte" value="futebolamericano">Futebol Americano
+                            </section>
+
+                            <section>
+                                <input type="checkbox" name="esporte" value="skate">Skate
+                            </section>
+
+                            <section>
+                                <input type="checkbox" name="esporte" value="tenis">Tênis
+                            </section>
+                        </section>
+                    </section>
+                </label>
+            </div>
+            
+            <div class="condicoes">
+                <label><c>Ao cadastrar-se em PUMA.COM, você concorda com:</c></label>
+                <label>
+                    <section class="condicoes__itens">
+                        <input type="checkbox" name="condicoes" value="termos" required>Termos e Condições de Uso da PUMA®
+                    </section>
+                    <section class="condicoes__itens">
+                        <input type="checkbox" name="condicoes" value="privacidade" required>Política de Privacidade da PUMA®
+                    </section>
+                </label>
+            </div>
+
+            <center>
+                <section style="padding-bottom: 50px; padding-top: 15px;">
+                    <button class="botao" type="submit" onsubmit="">Finalizar</button>
+                </section>
+            </center>
+            
+        </form>
+
+    </main>
+</body>
+</html>
